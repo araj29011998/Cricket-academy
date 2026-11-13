@@ -1,0 +1,6 @@
+{
+  "name": "Apex Cricket Academy",
+  "description": "High-performance cricket academy portal, live net-lane schedule tracker, and batting/bowling telemetry hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

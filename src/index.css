@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Oswald", sans-serif;
+  --font-label: "Montserrat", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+
+  --color-turf-onyx: #061f13;
+  --color-stadium-navy: #081425;
+  --color-pitch-green: #0b3b24;
+  --color-pitch-emerald: #134e32;
+  --color-slate-charcoal: #1e293b;
+  --color-leather-red: #d92d20;
+  --color-leather-red-hover: #b42318;
+  --color-championship-gold: #f59e0b;
+  --color-chalk-white: #ffffff;
+}
+
+@layer base {
+  html {
+    background-color: #061f13;
+    color: #f8fafc;
+    font-family: "DM Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #061f13;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: "Oswald", sans-serif;
+}
+
+.font-label {
+  font-family: "Montserrat", sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle horizontal scrollbar for the live academy schedule ribbon */
+.ribbon-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ribbon-scroll::-webkit-scrollbar-track {
+  background: #081425;
+}
+
+.ribbon-scroll::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 2px;
+}
+
+.ribbon-scroll::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
